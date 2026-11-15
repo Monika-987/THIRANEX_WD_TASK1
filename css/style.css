@@ -1,0 +1,175 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f6fb;
+    color: #222;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #202b45;
+    color: white;
+    padding: 15px 8%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+nav h2 {
+    margin: 0;
+}
+
+nav ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover,
+nav a:focus {
+    text-decoration: underline;
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+    outline: 3px solid #e39b00;
+    outline-offset: 3px;
+}
+
+.skip-link {
+    position: absolute;
+    left: -9999px;
+    top: 10px;
+    background: white;
+    color: black;
+    padding: 10px;
+}
+
+.skip-link:focus {
+    left: 10px;
+    z-index: 10;
+}
+
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    max-width: 850px;
+    margin: auto;
+}
+
+.hero h1 {
+    font-size: 42px;
+    color: #202b45;
+}
+
+.hero h2 {
+    color: #344d7a;
+}
+
+.content {
+    max-width: 850px;
+    margin: 40px auto;
+    padding: 30px;
+    background: white;
+    border-radius: 10px;
+}
+
+.content h1,
+.content h2 {
+    color: #202b45;
+}
+
+.project-card {
+    background: #eef2fa;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+}
+
+.btn,
+button {
+    display: inline-block;
+    background: #202b45;
+    color: white;
+    padding: 12px 22px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.btn:hover,
+button:hover {
+    background: #344d7a;
+}
+
+form div {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #777;
+    border-radius: 5px;
+    font: inherit;
+}
+
+footer {
+    background: #202b45;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
+}
+
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero {
+        padding: 60px 20px;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .content {
+        margin: 20px;
+        padding: 20px;
+    }
+}
